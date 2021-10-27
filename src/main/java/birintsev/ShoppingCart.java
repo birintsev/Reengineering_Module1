@@ -147,7 +147,7 @@ public class ShoppingCart{
      * For Item.Type.SALE discount is 90%
      * For each full 100 items item gets additional 10%, but not more than 80% total
      */
-    private static int calculateDiscount(Item item){
+    static int calculateDiscount(Item item) {
         int discount = 0;
         switch (item.getType()) {
             case SECOND:
